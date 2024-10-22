@@ -254,4 +254,117 @@ section{
 
 .project-card{
     padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid black;
+    border-radius: 3rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover{
+    background-color: black;
+    color: white;
+    transform: translateY(-10px)scale(1.02);
+}
+
+.project-card img{
+    width: 20vw;
+    border-radius: 1rem;
+}
+
+.project-card:hover .btn{
+    border: 2px solid white;
+    color: white;
+}
+
+.project-card:hover .btn:hover{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+.project-card h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.textTest{
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.textTest .Esquente{
+    color: bisque;
+    background-color:burlywood;
+    transition: 2s ease-in-out;
+}
+
+.textTest .Esquente:hover{
+    background-color: brown;
+}
+
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.input-box input{
+    border-radius: 3rem;
+    border: 2px solid black;
+    padding: 2rem 8rem;
+    font-size: 3rem;
+}
+
+.input-box input::placeholder{
+    font-size: 3rem;
+}
+
+.input{
+    position: relative;
+}
+
+.input i{
+    position: absolute;
+    font-size: 4rem;
+    top: 50%;
+    left: 10px;
+    transform: translate(50%,-50%);
+}
+
+footer{
+    bottom: 0;
+    left: 0;
+    height: 10rem;
+    width: 100%;
+    display: flex;
+    gap:1rem ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+footer ul li a{
+    color: black;
+    font-weight: 600;
+}
+
+.copyright{
+    font-size: 300;
 }
