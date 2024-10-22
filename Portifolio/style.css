@@ -367,4 +367,91 @@ footer ul li a{
 
 .copyright{
     font-size: 300;
+    margin-top: 2rem;
+}
+
+
+/*
+    Responsividade
+*/
+
+@media(max-width:1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-container{
+        gap: 3rem;
+    }
+    .experience-info{
+        flex-direction: column;
+    }
+    .input-box input{
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+    .input input::placeholder{
+        font-size: 2rem;
+    }
+    .input-box i{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .visit-btn{
+        display: none;
+    }
+    
+    
+    .input-box i{
+        display: none;
+    }
+    .input-box input{
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+    .input input::placeholder{
+        font-size: 1.5rem;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experience-info img{
+        width: 70vw;
+    }
+}
+
+@media(max-width:600px){
+    header #menu-icon{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: black;
+        border-radius: 3rem;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+
+    .nav-links.active{
+        display: block;
+    }
 }
